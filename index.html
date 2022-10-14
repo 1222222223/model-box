@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Model-Box - AnCode'S</title>
+        <!-- Link CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Container star -->
+        <div class="container">
+
+        </div>
+        <!-- Container end -->
+
+        <!-- modelBox  star-->
+        <div id="modelBox">
+            <img src="images/banner.png" alt="banner-images" width="100%">
+            <div class="offer-text">
+                <h2>Get 15% OFF</h2>
+                <small>
+                    On all beauty products by ChuaDev
+                </small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        In numquam quas assumenda cumque magni laboriosam
+                        laudantium quam, repellendus quasi aspernatur non
+                        voluptates ducimus temporibus quo molestias suscipit
+                        modi eos illum!</p>
+                <form>
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <img src="images/close.png" class="close-icon" onclick="closeModel()">
+        </div>
+        <!-- modelBox end -->
+
+
+        <!-- Bagian scipt start -->
+
+        <script>
+            let modelBox = document.getElementById("modelBox");
+
+            document.onmouseleave = function(){
+                modelBox.style.display = "block";
+            }
+
+            function closeModel(){
+                modelBox.style.display = "none";
+            }
+        </script>
+        <!-- Bagian scipt end -->
+
+    </body>
+</html>
